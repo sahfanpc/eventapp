@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="a1">
+    <div class="a2">
+        <button (click)="button()" type="button" class="btn btn-dark a4"[ngClass]="testbutton==true?'style1':''">AddEvent</button>
+    </div>
+    <div  *ngIf="testbutton"class="a3">
+<form [formGroup]="addform">
+    <h1>Create Event</h1>
+    <input type="text"placeholder="Event Name"formControlName="eventname1"><br>
+    <input type="date"class="a5"placeholder="Event Date"formControlName="eventdate1"><br>
+    <input type="number"placeholder="{{userid}}"formControlName="eventowner1" ><br>
+    <label for="">priority:</label>
+    <p><input type="radio"Name="priority"value="Low"formControlName="value"checked:true> Low<br>
+    <input class="a9"type="radio"Name="priority"value="Mediam"formControlName="value"checked:true>  Mediam<br>
+    <input class="a7"type="radio"Name="priority"value="High"formControlName="value"checked:true>  High</p>
+    <button (click)="butt()" class="a8"type="button" class="btn btn-success">Add</button>
+</form>
+    </div>
+</div>
+<div class="as" *ngIf="testbutton">
+<button class="a6"(click)=close()>close</button>
+</div>

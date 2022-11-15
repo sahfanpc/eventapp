@@ -1,0 +1,18 @@
+<div>
+    <div>
+      
+    </div>
+    
+    <form [formGroup]="registerform">
+        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80 a1">
+        <h1>Register</h1>
+        <input type="number"placeholder="User id" formControlName="userid1"><br>
+        <input type="email"placeholder="E-mail"formControlName="email1"><br>
+        <input type="password"placeholder="password"formControlName="password1"><br>
+        <input type="date"placeholder="Date Of Birth"class="aa" formControlName="dateofbirth1"><br>
+        <button type="button"(click)="register()" class="btn btn-warning">Signin</button>
+        <P>Already a user?<a href="login">Login</a></P>
+    </form>
+    
+</div>
+<!-- <i class="bi bi-person-fill"></i> -->

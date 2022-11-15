@@ -1,0 +1,48 @@
+.a1{
+    width: 200px;
+    height: 200px;
+    border-radius: 80px;
+    border: 2px solid black;
+    box-shadow: 5px 20px 30px black;
+    opacity: .8;
+}
+.a2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    /* margin-left: 20px */
+}
+h1{
+color: white;
+font-size: 60px;
+}
+.a3{
+    margin-left: 1240px;
+    margin-top: -70px;
+    border: 2px solid black;
+}
+.a3:hover{
+    background-color: blue;
+    color: white;
+}
+.a4{ 
+    margin-left: 640px;
+}
+p{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.a5{
+    margin-left: 640px;
+    border: 2px solid black;
+    padding-right: 30px;
+    padding-left: 30px; 
+    background: none;
+}
+.a5:hover{
+    background-color: blue;
+    color: white;
+}

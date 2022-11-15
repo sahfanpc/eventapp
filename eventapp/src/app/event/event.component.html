@@ -1,0 +1,35 @@
+
+<h1>EVENTS</h1>
+<table border="1"width="90%"cellpadding="10"cellspacing="10"[ngClass]="testbutton==true?'style1':''">
+    <thead>
+        <tr>
+            <th>EVENT NAME</th>
+            <th>EVENT DATE</th>
+            <th>PRIORITY</th>
+            <th>BUTTON</th>
+        </tr>
+    </thead>
+<tbody *ngFor="let event of eventsArray">
+    <tr>
+        <td>{{event.eventname}}</td>
+        <td>{{event.eventdate}}</td>
+        <td>{{event.priority}}</td>
+        <td><button (click)="button1(event)"><i class="bi bi-trash3-fill"></i></button></td>
+        <!-- item.eventname,item.eventdate -->
+        
+    </tr>
+</tbody>
+</table>
+<div *ngIf="testbutton">
+    <div class="a1">
+        <h2>Delete Event</h2>
+        <p>{{array.eventowner}}</p>
+        <p>{{array.eventname}}</p>
+        <p>{{array.eventdate}}</p>
+        <p>{{array.priority}}</p>
+        <h6>are you sure to delete the event ?</h6>
+        <button class="aa"(click)=cancel()>cancel</button><button (click)=delete(array) class="bb">delete</button>
+
+    </div>
+    
+</div>

@@ -1,0 +1,23 @@
+<h1>Deleted Events</h1>
+<table border="1"width="90%"cellpadding="10"cellspacing="10">
+    <thead>
+        <tr>
+            <th>EVENT NAME</th>
+            <th>EVENT ID</th>
+            <th>EVENT DATE</th>
+            <th>PRIORITY</th>
+          
+    
+        </tr>
+    </thead>
+<tbody *ngFor="let event of eventsArray">
+    <tr>
+        <td>{{event.eventname}}</td>
+        <td>{{event.eventid}}</td>
+        <td>{{event.eventdate}}</td>
+        <td>{{event.priority}}</td>
+       
+        
+    </tr>
+</tbody>
+</table>

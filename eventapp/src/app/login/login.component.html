@@ -1,0 +1,17 @@
+<div>
+    <div>
+      
+    </div>
+    
+    <form [formGroup]="loginform">
+        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80 a1">
+        <h1>Login</h1>
+        <i class="bi bi-person-fill"></i>
+        <input type="email"placeholder="E-mail"formControlName="email1"><br>
+        <i class="bi bi-key-fill"></i>
+        <input type="password"placeholder="password"formControlName="password1"><br>
+        <button (click)="login()" type="button" class="btn btn-warning">Login</button>
+        <P>Are you registered?<a href="register">Register</a></P>
+    </form>
+    
+</div>

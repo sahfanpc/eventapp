@@ -1,0 +1,19 @@
+.a1{
+    color: black;
+    font-size: 26px;
+    font-weight: bolder;
+}.a3{
+    font-size: larger;
+    margin-left: -650px;
+    color: black;
+    border: none;
+}
+.a3:hover{
+    background-color: white;
+}
+.a2{
+    color: white;
+}
+.a2:hover{
+    background-color: red;
+}
